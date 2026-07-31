@@ -1,21 +1,47 @@
 aid: niko
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/niko.png
 name: Niko
-description: 'Niko is a company surfaced as a portfolio company of qed-investors and added to the API
-  Evangelist network as a stub for enrichment. Sector: fintech. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Niko (Niko Energy) is a Mexican clean-energy company focused on energy efficiency
+  for multi-site enterprises. It designs, installs, and finances commercial and residential
+  solar photovoltaic systems and battery storage, wrapping them in embedded financing options
+  that include cash purchase, 12-month interest-free plans, multi-year subscriptions, and power
+  purchase agreements (PPAs). Its Niko Hub dashboard centralizes energy-portfolio management
+  across locations, Niko Care provides 24/7 monitoring and maintenance, and Niko Insurance covers
+  panel hardware. Backed by fintech venture firm QED Investors, Niko pairs solar deployment with
+  consumption analytics and ESG / consolidated reporting. No public developer API, documentation,
+  or specification surface was found on niko.mx as of this enrichment pass.'
 url: https://raw.githubusercontent.com/api-evangelist/niko/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - qed-investors
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: identified-no-public-api
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Energy
+- Solar
+- Renewable Energy
+- Energy Efficiency
+- Embedded Finance
 - Fintech
+- Mexico
+- Battery Storage
+- ESG
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +49,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/niko-domain-security.yml
 - type: Website
-  url: https://Niko.mx
+  url: https://niko.mx
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
